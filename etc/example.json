@@ -1,0 +1,26 @@
+{
+    "$.exampleEnd": {
+        "DateTime": {"time": "tomorrow"}
+    },
+
+    "$.exampleBegin": {
+        "DateTime": {},
+        "setDate": {
+            "year":  "2001",
+            "month": "12",
+            "day":   "8"
+        }
+    },
+
+    "$.exampleInterval": {
+        "DateInterval": {"interval_spec": "P1D"}
+    },
+
+    "$.examplePeriod": {
+        "DatePeriod": {
+            "start":    "$.exampleBegin",
+            "interval": "$.exampleInterval",
+            "end":      "$.exampleEnd"
+        }
+    }
+}
